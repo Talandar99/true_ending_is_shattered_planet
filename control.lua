@@ -1,10 +1,19 @@
--- Disable original Space Age victory
-if remote.interfaces["space_finish_script"] then
-	remote.call("space_finish_script", "set_no_victory", true)
+local target_location = "shattered-planet"
+local finished = {}
+
+local function disable_original_victory()
+	if remote.interfaces["space_finish_script"] then
+		remote.call("space_finish_script", "set_no_victory", true)
+	end
 end
 
-local target_location = "vulcanus"
-local finished = {}
+script.on_init(function()
+	disable_original_victory()
+end)
+
+script.on_configuration_changed(function()
+	disable_original_victory()
+end)
 
 local function on_platform_changed(event)
 	local platform = event.platform
