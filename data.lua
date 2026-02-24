@@ -2,7 +2,7 @@ local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-de
 data:extend({
 	{
 		type = "space-location",
-		name = "half-way-to-shattered-planet",
+		name = "halfway-to-shattered-planet",
 		icon = "__space-age__/graphics/icons/solar-system-edge.png",
 		order = "f[solbar-system-edge]",
 		subgroup = "planets",
@@ -18,11 +18,11 @@ data:extend({
 	},
 	{
 		type = "space-connection",
-		name = "solar-system-edge-half-way-to-shattered-planet",
+		name = "solar-system-edge-halfway-to-shattered-planet",
 		icon = "__space-age__/graphics/icons/solar-system-edge.png",
 		subgroup = "planet-connections",
 		from = "solar-system-edge",
-		to = "half-way-to-shattered-planet",
+		to = "halfway-to-shattered-planet",
 		order = "i",
 		length = 2000000,
 		asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.shattered_planet_trip),
@@ -31,7 +31,7 @@ data:extend({
 		type = "space-connection",
 		name = "solar-system-edge-shattered-planet",
 		subgroup = "planet-connections",
-		from = "half-way-to-shattered-planet",
+		from = "halfway-to-shattered-planet",
 		to = "shattered-planet",
 		order = "i",
 		length = 2000000,
@@ -71,5 +71,5 @@ if tech and tech.effects then
 end
 table.insert(data.raw["technology"]["promethium-science-pack"].effects, {
 	type = "unlock-space-location",
-	space_location = "half-way-to-shattered-planet",
+	space_location = "halfway-to-shattered-planet",
 })

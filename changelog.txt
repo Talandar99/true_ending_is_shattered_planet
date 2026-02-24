@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2026-02-24
+  Changes:
+    - added new space location "Halfway to the shattered planet"
+    - added new research "Shattered Planet", and moved unlocking shattered planet location 
+      to this research from unlocking promethium science
+    - both changes are needed give access to promethium chunks without giving ability to 
+      reach shattered planet. Unlocking shattered planet will now require automating promethium science
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2025-11-20
   Changes:
