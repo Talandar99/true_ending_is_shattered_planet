@@ -50,7 +50,7 @@ data:extend({
 		},
 		prerequisites = { "promethium-science-pack" },
 		unit = {
-			count = 10000,
+			count = 20000,
 			ingredients = {
 				{ "promethium-science-pack", 1 },
 			},
